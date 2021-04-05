@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewControllerWho: UIViewController {
     
     @IBOutlet var NameStack: UIStackView!
     @IBOutlet var status: UILabel!
@@ -38,4 +38,5 @@ class ViewController: UIViewController {
         if let url = URL(string:urlStr), !url.absoluteString.isEmpty {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
-    }}
+    }
+}

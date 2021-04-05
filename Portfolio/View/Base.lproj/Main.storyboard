@@ -11,7 +11,7 @@
         <!--Skills and projects-->
         <scene sceneID="twE-Bw-w8Q">
             <objects>
-                <viewController id="3f5-Fs-CXv" sceneMemberID="viewController">
+                <viewController id="3f5-Fs-CXv" customClass="ViewControllerSkills" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EFh-yA-RMI">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,7 +19,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6M-tp-7IL">
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="1217"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDW-T2-PAE">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDW-T2-PAE" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="1300"/>
                                         <subviews>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DmS-nN-r5T">
@@ -30,8 +30,11 @@
                                                     <segment title="Projects"/>
                                                 </segments>
                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
+                                                <connections>
+                                                    <action selector="didChangeSegment:" destination="3f5-Fs-CXv" eventType="valueChanged" id="STJ-zb-1Rz"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="mfT-hv-akI">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="mfT-hv-akI" userLabel="BotView">
                                                 <rect key="frame" x="0.0" y="91" width="428" height="642.66666666666663"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telegram weather bot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvP-9c-lc0">
@@ -94,11 +97,11 @@
                                                     <constraint firstItem="baJ-0Q-EbC" firstAttribute="leading" secondItem="mfT-hv-akI" secondAttribute="leading" constant="20" id="ywh-ot-Svn"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="eMJ-br-c1B">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="eMJ-br-c1B" userLabel="SiteView">
                                                 <rect key="frame" x="0.0" y="753.66666666666663" width="428" height="406.99999999999989"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Single page shop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWa-Tp-Hbd">
-                                                        <rect key="frame" x="138.66666666666666" y="0.0" width="150.99999999999997" height="24"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Single page shop site" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWa-Tp-Hbd">
+                                                        <rect key="frame" x="120.66666666666669" y="0.0" width="187" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -268,16 +271,12 @@
                                             <constraint firstAttribute="trailing" secondItem="mfT-hv-akI" secondAttribute="trailing" id="zmN-UV-aWi"/>
                                             <constraint firstItem="DmS-nN-r5T" firstAttribute="centerX" secondItem="DDW-T2-PAE" secondAttribute="centerX" id="zpi-ha-sGZ"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="subviews">
-                                                <exclude reference="1A9-W0-Hax"/>
-                                            </mask>
-                                        </variation>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="DDW-T2-PAE" firstAttribute="leading" secondItem="D6M-tp-7IL" secondAttribute="leading" id="78s-Ri-mT6"/>
                                     <constraint firstItem="DDW-T2-PAE" firstAttribute="top" secondItem="D6M-tp-7IL" secondAttribute="top" id="A1Y-No-yVI"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="CTr-ZT-mQu"/>
                                     <constraint firstItem="DDW-T2-PAE" firstAttribute="width" secondItem="D6M-tp-7IL" secondAttribute="width" id="FOh-hz-3Cx"/>
                                     <constraint firstAttribute="trailing" secondItem="DDW-T2-PAE" secondAttribute="trailing" id="LIZ-ie-IFa"/>
                                     <constraint firstAttribute="bottom" secondItem="DDW-T2-PAE" secondAttribute="bottom" constant="-83" id="dsO-6P-Tt3"/>
@@ -295,6 +294,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Skills and projects" image="star" catalog="system" id="pkj-Ce-tBJ"/>
                     <size key="freeformSize" width="428" height="1300"/>
+                    <connections>
+                        <outlet property="BotStack" destination="mfT-hv-akI" id="NwZ-Vz-rqM"/>
+                        <outlet property="ContentView" destination="DDW-T2-PAE" id="Cfq-u3-5Sq"/>
+                        <outlet property="SiteStack" destination="eMJ-br-c1B" id="9mF-K9-tVA"/>
+                        <outlet property="SkillsMainView" destination="EFh-yA-RMI" id="dEf-zx-Ybs"/>
+                        <outlet property="SkillsStack" destination="1A9-W0-Hax" id="tfo-7R-MxH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cvZ-QX-rOu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -319,7 +325,7 @@
         <!--Who am I?-->
         <scene sceneID="ns7-Zc-RGf">
             <objects>
-                <viewController id="VaD-ua-SFQ" customClass="ViewController" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VaD-ua-SFQ" customClass="ViewControllerWho" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dh2-Zk-2Bp" userLabel="ContentView">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
