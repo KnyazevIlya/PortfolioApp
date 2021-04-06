@@ -73,10 +73,10 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVV-lq-hhV">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVV-lq-hhV">
                                                         <rect key="frame" x="20" y="499.66666666666663" width="388" height="122"/>
                                                         <string key="text">The bot has was built using Python aiogram asynchronous library. Multiuser SQLite database is a part of the project. User can send his location to the bot and pick one of the options to get a weather forecast or a weather map. Data could be get via OpenWeather API.</string>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -395,16 +395,57 @@
             </objects>
             <point key="canvasLocation" x="246.72897196261681" y="314.90280777537799"/>
         </scene>
-        <!--View Controller-->
+        <!--Gaming-->
         <scene sceneID="mVm-10-5lc">
             <objects>
-                <viewController id="cCZ-PP-Cag" sceneMemberID="viewController">
+                <viewController id="cCZ-PP-Cag" userLabel="Gaming" customClass="ViewControllerGaming" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LrK-dc-CbX">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="6kf-jv-LqX">
+                                <rect key="frame" x="20" y="20" width="388" height="584.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My choice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQk-hM-cuc">
+                                        <rect key="frame" x="149" y="0.0" width="90" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemIndigoColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="valorant" translatesAutoresizingMaskIntoConstraints="NO" id="wNR-ct-y2Z">
+                                        <rect key="frame" x="0.0" y="45.000000000000014" width="388" height="218.33333333333337"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="wNR-ct-y2Z" secondAttribute="height" multiplier="16:9" id="Vty-wZ-cpv"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bf1" translatesAutoresizingMaskIntoConstraints="NO" id="HeC-L4-ILQ">
+                                        <rect key="frame" x="0.0" y="284.33333333333331" width="388" height="218.33333333333331"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="HeC-L4-ILQ" secondAttribute="height" multiplier="16:9" id="Ju9-2P-Lzw"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPk-sn-URz">
+                                        <rect key="frame" x="0.0" y="523.66666666666663" width="388" height="61"/>
+                                        <string key="text">These team cooperative shooters are my favorites. They just help turn off all the pressure and enjoy perfectly constructed battlefields.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ECm-9Z-8ss"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6kf-jv-LqX" firstAttribute="leading" secondItem="ECm-9Z-8ss" secondAttribute="leading" constant="20" id="H1Y-wr-rmU"/>
+                            <constraint firstItem="ECm-9Z-8ss" firstAttribute="trailing" secondItem="6kf-jv-LqX" secondAttribute="trailing" constant="20" id="oI7-JK-hFC"/>
+                            <constraint firstItem="6kf-jv-LqX" firstAttribute="top" secondItem="ECm-9Z-8ss" secondAttribute="top" constant="20" id="oaL-5g-gQR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bf1Img" destination="HeC-L4-ILQ" id="A3X-6w-IUE"/>
+                        <outlet property="valorantImg" destination="wNR-ct-y2Z" id="fz9-Oy-qbc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rqc-hJ-NwJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -944,6 +985,7 @@
         <image name="ATV" width="1366" height="768"/>
         <image name="LinkedIn icon" width="512" height="512"/>
         <image name="ProfilePhoto" width="700" height="525"/>
+        <image name="bf1" width="1300" height="731"/>
         <image name="bot" width="1000" height="1513"/>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="face.smiling" catalog="system" width="128" height="121"/>
@@ -958,6 +1000,7 @@
         <image name="shopsite" width="1320" height="690"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="telegram" width="512" height="512"/>
+        <image name="valorant" width="1920" height="1080"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

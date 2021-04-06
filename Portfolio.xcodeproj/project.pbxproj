@@ -10,6 +10,7 @@
 		BC15DFAB261B90B100A5CF36 /* ViewControllerSkills.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC15DFAA261B90B100A5CF36 /* ViewControllerSkills.swift */; };
 		BC15DFAE261C63C100A5CF36 /* ViewControllerHobbies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC15DFAD261C63C100A5CF36 /* ViewControllerHobbies.swift */; };
 		BC15DFB7261CB7BC00A5CF36 /* ViewControllerForest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC15DFB6261CB7BC00A5CF36 /* ViewControllerForest.swift */; };
+		BC15DFBA261CD25A00A5CF36 /* ViewControllerGaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC15DFB9261CD25A00A5CF36 /* ViewControllerGaming.swift */; };
 		BC8C66512619BE5100EFFF03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C66502619BE5100EFFF03 /* AppDelegate.swift */; };
 		BC8C66532619BE5100EFFF03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C66522619BE5100EFFF03 /* SceneDelegate.swift */; };
 		BC8C66552619BE5100EFFF03 /* ViewControllerWho.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C66542619BE5100EFFF03 /* ViewControllerWho.swift */; };
@@ -23,6 +24,7 @@
 		BC15DFAA261B90B100A5CF36 /* ViewControllerSkills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSkills.swift; sourceTree = "<group>"; };
 		BC15DFAD261C63C100A5CF36 /* ViewControllerHobbies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHobbies.swift; sourceTree = "<group>"; };
 		BC15DFB6261CB7BC00A5CF36 /* ViewControllerForest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerForest.swift; sourceTree = "<group>"; };
+		BC15DFB9261CD25A00A5CF36 /* ViewControllerGaming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerGaming.swift; sourceTree = "<group>"; };
 		BC8C664D2619BE5100EFFF03 /* Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8C66502619BE5100EFFF03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC8C66522619BE5100EFFF03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				BC15DFAA261B90B100A5CF36 /* ViewControllerSkills.swift */,
 				BC15DFAD261C63C100A5CF36 /* ViewControllerHobbies.swift */,
 				BC15DFB6261CB7BC00A5CF36 /* ViewControllerForest.swift */,
+				BC15DFB9261CD25A00A5CF36 /* ViewControllerGaming.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC15DFBA261CD25A00A5CF36 /* ViewControllerGaming.swift in Sources */,
 				BC15DFAE261C63C100A5CF36 /* ViewControllerHobbies.swift in Sources */,
 				BC8C66552619BE5100EFFF03 /* ViewControllerWho.swift in Sources */,
 				BC8C66512619BE5100EFFF03 /* AppDelegate.swift in Sources */,
