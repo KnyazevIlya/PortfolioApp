@@ -14,8 +14,11 @@ class ViewControllerSkills: UIViewController {
     @IBOutlet var SkillsStack: UIStackView!
     @IBOutlet var BotStack: UIStackView!
     @IBOutlet var SiteStack: UIStackView!
-
-    let changeHeightConstant: CGFloat = 700
+    
+    //BUG: after first change of the view height, view becomes complitely black,
+    //but it can be fixed switching to another scene and back or activatint status bar
+    
+    //let changeHeightConstant: CGFloat = 700
     
     override func viewDidLoad() {
         

@@ -75,7 +75,7 @@
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVV-lq-hhV">
                                                         <rect key="frame" x="20" y="499.66666666666663" width="388" height="122"/>
-                                                        <string key="text">The bot has was built using Python aiogram asynchronous library. Multiuser SQLite database is a part of the project. User can send his location to the bot and pick one of the options to get a weather forecast or a weather map. Data could be get via OpenWeather API.</string>
+                                                        <string key="text">The bot was built using Python aiogram asynchronous library. Multiuser SQLite database is a part of the project. User can send his location to the bot and pick one of the options to get a weather forecast or a weather map. Data could be get via OpenWeather API.</string>
                                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
