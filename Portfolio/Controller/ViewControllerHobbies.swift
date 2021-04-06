@@ -2,44 +2,22 @@ import UIKit
 
 class ViewControllerHobbies: UIViewController {
     
-    @IBOutlet var sliderForest: UICollectionView!
-    var forestImages = [ "ATV",
-                        "mashrooms",
-                        "herbs"]
+    @IBOutlet var atvButton: UIButton!
+    @IBOutlet var gamingButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .green
+        setButtonStyle(button: atvButton)
+        setButtonStyle(button: gamingButton)
     }
     
-}
-
-extension ViewControllerHobbies: UICollectionViewDataSource, UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return forestImages.count
-    }
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? DataCollectionViewCell
-        cell?.slide.image = UIImage(named: forestImages[indexPath.row])
-        
-        return cell!
-    }
-}
-    extension ViewControllerHobbies: UICollectionViewDelegateFlowLayout {
-        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            let size = UIScreen.main.bounds
-            return CGSize(width: size.width, height: size.height)
-        }
-        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        }
-        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-            return 0
-        }
-        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-            return 0
-        }
-    }
-
     
+    func setButtonStyle(button: UIButton) {
+        button.imageView?.layer.cornerRadius = 15
+        button.imageView?.layer.borderWidth = 2
+        button.imageView?.layer.borderColor = CGColor(srgbRed: 0.34509803921568627, green: 0.33725490196078434, blue: 0.8392156862745098, alpha: 1)
+    }
+}
+
+

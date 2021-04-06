@@ -19,6 +19,7 @@ class ViewControllerWho: UIViewController {
         super.viewDidLoad()
         
         NameStack.backgroundColor = UIColor(displayP3Red: 0.34509803921568627, green: 0.33725490196078434, blue: 0.8392156862745098, alpha: 0.3)
+        
     }
     
     @IBAction func TapGitHub(_ sender: Any) {
