@@ -315,13 +315,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My hobbies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXi-lm-UCB">
-                                <rect key="frame" x="20" y="64" width="388" height="36"/>
+                                <rect key="frame" x="20" y="59" width="388" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" systemColor="systemIndigoColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wzw-lM-HZD">
-                                <rect key="frame" x="20" y="120.00000000000001" width="388" height="252.33333333333337"/>
+                                <rect key="frame" x="20" y="115.00000000000001" width="388" height="252.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATVs and forest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKa-Ng-BhM">
                                         <rect key="frame" x="125.33333333333336" y="0.0" width="137.66666666666663" height="24"/>
@@ -346,7 +346,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kYh-C3-znq">
-                                <rect key="frame" x="20" y="402.33333333333331" width="388" height="252.33333333333331"/>
+                                <rect key="frame" x="20" y="387.33333333333326" width="388" height="275.66666666666674"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gaming" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9L9-WB-LSd">
                                         <rect key="frame" x="160" y="0.0" width="68" height="24"/>
@@ -364,6 +364,12 @@
                                             <segue destination="cCZ-PP-Cag" kind="presentation" id="7gd-jo-okd"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on hobby plate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOX-un-Yhf">
+                                        <rect key="frame" x="144" y="262.33333333333331" width="100" height="13.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" systemColor="systemIndigoColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="X6m-VX-bLS" secondAttribute="trailing" id="9Sm-52-dQw"/>
@@ -379,8 +385,8 @@
                             <constraint firstItem="Wzw-lM-HZD" firstAttribute="leading" secondItem="Xw9-CH-vL0" secondAttribute="leading" constant="20" id="7Rn-ZU-HG0"/>
                             <constraint firstItem="kYh-C3-znq" firstAttribute="leading" secondItem="Xw9-CH-vL0" secondAttribute="leading" constant="20" id="Ati-8J-cCw"/>
                             <constraint firstItem="Xw9-CH-vL0" firstAttribute="trailing" secondItem="kYh-C3-znq" secondAttribute="trailing" constant="20" id="Nwm-cP-rgr"/>
-                            <constraint firstItem="PXi-lm-UCB" firstAttribute="top" secondItem="Xw9-CH-vL0" secondAttribute="top" constant="20" id="Tif-Cy-moy"/>
-                            <constraint firstItem="kYh-C3-znq" firstAttribute="top" secondItem="Wzw-lM-HZD" secondAttribute="bottom" constant="30" id="UIl-tK-N7f"/>
+                            <constraint firstItem="PXi-lm-UCB" firstAttribute="top" secondItem="Xw9-CH-vL0" secondAttribute="top" constant="15" id="Tif-Cy-moy"/>
+                            <constraint firstItem="kYh-C3-znq" firstAttribute="top" secondItem="Wzw-lM-HZD" secondAttribute="bottom" constant="20" id="UIl-tK-N7f"/>
                             <constraint firstItem="Wzw-lM-HZD" firstAttribute="top" secondItem="PXi-lm-UCB" secondAttribute="bottom" constant="20" id="cQa-Of-c0v"/>
                             <constraint firstItem="Xw9-CH-vL0" firstAttribute="trailing" secondItem="Wzw-lM-HZD" secondAttribute="trailing" constant="20" id="ydA-AU-HYB"/>
                         </constraints>
