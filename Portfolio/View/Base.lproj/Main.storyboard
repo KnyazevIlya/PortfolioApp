@@ -415,11 +415,129 @@
             <objects>
                 <viewController id="DP1-Dh-TRP" customClass="ViewControllerForest" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cRL-7I-dQT">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="596"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="auv-ag-e1S" userLabel="Forest plates">
+                                <rect key="frame" x="20" y="118.66666666666666" width="388" height="358.66666666666674"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="10x-VT-6tI" userLabel="ATV plate">
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="106.33333333333333"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="p4e-BC-19v">
+                                                <rect key="frame" x="0.0" y="0.0" width="189" height="106.33333333333333"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ATV" translatesAutoresizingMaskIntoConstraints="NO" id="Lfi-0x-0CM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="189" height="106.33333333333333"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Lfi-0x-0CM" secondAttribute="height" multiplier="16:9" id="cCf-II-8d5"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Sce-Sc-0fq">
+                                                <rect key="frame" x="199" y="10.999999999999986" width="189" height="84.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPc-0g-juJ">
+                                                        <rect key="frame" x="76.666666666666686" y="0.0" width="36" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" systemColor="systemIndigoColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High-speed trips through the woods and fields give me a lot of energy." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubS-nr-las">
+                                                        <rect key="frame" x="0.0" y="34" width="189" height="50.333333333333343"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BMr-Cg-aac" userLabel="Mushroom plate">
+                                        <rect key="frame" x="0.0" y="126.33333333333331" width="388" height="106"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9eZ-BS-wVd">
+                                                <rect key="frame" x="0.0" y="2.3333333333333428" width="189" height="101"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mushrooming" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="ZxI-wq-zfW">
+                                                        <rect key="frame" x="34.333333333333336" y="0.0" width="120.66666666666666" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" systemColor="systemIndigoColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slow forest strolls looking for mushrooms are delightful, especially when your home area is full of them." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgM-yC-7YM">
+                                                        <rect key="frame" x="0.0" y="33.999999999999972" width="189" height="67"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ONp-d0-tGc">
+                                                <rect key="frame" x="199" y="0.0" width="189" height="106"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mahrooms" translatesAutoresizingMaskIntoConstraints="NO" id="biF-Em-JtQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="189" height="106"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="biF-Em-JtQ" secondAttribute="height" multiplier="16:9" id="ooe-rD-13A"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qal-aO-BkP" userLabel="Herbs plate">
+                                        <rect key="frame" x="0.0" y="252.33333333333334" width="388" height="106.33333333333334"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="Qac-qo-jXf">
+                                                <rect key="frame" x="0.0" y="0.0" width="189" height="106.33333333333333"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="herbs" translatesAutoresizingMaskIntoConstraints="NO" id="cPl-HM-xTz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="189" height="106.33333333333333"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="cPl-HM-xTz" secondAttribute="height" multiplier="16:9" id="gt1-u2-CJt"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="euW-ph-r7x">
+                                                <rect key="frame" x="199" y="11" width="189" height="84.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Herbs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4a-ER-jep">
+                                                        <rect key="frame" x="68" y="0.0" width="53.333333333333343" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" systemColor="systemIndigoColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Herbs picking is just another pleasant way of spending time." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dci-a6-SVz">
+                                                        <rect key="frame" x="0.66666666666665719" y="34" width="188" height="50.333333333333343"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="BFG-LF-KWf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="auv-ag-e1S" firstAttribute="centerX" secondItem="cRL-7I-dQT" secondAttribute="centerX" id="0Mk-nE-WoI"/>
+                            <constraint firstItem="auv-ag-e1S" firstAttribute="leading" secondItem="BFG-LF-KWf" secondAttribute="leading" constant="20" id="4Ja-jl-x1R"/>
+                            <constraint firstItem="auv-ag-e1S" firstAttribute="centerY" secondItem="cRL-7I-dQT" secondAttribute="centerY" id="FVP-rr-hKI"/>
+                            <constraint firstAttribute="trailing" secondItem="auv-ag-e1S" secondAttribute="trailing" constant="20" id="GVz-SF-JF5"/>
+                        </constraints>
                     </view>
+                    <size key="freeformSize" width="428" height="650"/>
+                    <connections>
+                        <outlet property="atvImg" destination="Lfi-0x-0CM" id="7xE-Lg-SEE"/>
+                        <outlet property="herbImg" destination="cPl-HM-xTz" id="frU-08-fW3"/>
+                        <outlet property="mushroomImg" destination="biF-Em-JtQ" id="rm1-Ky-ij9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qq1-4Y-1Zi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -832,6 +950,8 @@
         <image name="gamer_room" width="1200" height="677"/>
         <image name="github icon" width="512" height="512"/>
         <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="herbs" width="1920" height="1080"/>
+        <image name="mahrooms" width="1024" height="576"/>
         <image name="mappin" catalog="system" width="105" height="128"/>
         <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
